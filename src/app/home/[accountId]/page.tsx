@@ -13,10 +13,10 @@ export async function generateMetadata( { params } ) {
 }
 
 export const fetchDataAPI = async ( accountId: string ) => {
-  const resp = await fetch('some url', {
-    cache: 'force-cache',
-    next: { revalidate: 86400 },  // update data once a day
-  })
+  // const resp = await fetch('some url', {
+  //   cache: 'force-cache',
+  //   next: { revalidate: 86400 },  // update data once a day
+  // })
   return fetchData(accountId)
 }
 
